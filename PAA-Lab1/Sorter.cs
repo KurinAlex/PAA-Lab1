@@ -16,7 +16,7 @@ namespace PAA_Lab1
 
             stopwatch.Stop();
 
-            return new SortingResult(_swapsCount, _comparisonsCount, (double)stopwatch.ElapsedTicks / Stopwatch.Frequency * 1000);
+            return new SortingResult(_swapsCount, _comparisonsCount, stopwatch.Elapsed.TotalMilliseconds);
         }
 
         public abstract void Sort(int[] array);

@@ -37,7 +37,6 @@
 
             for (int i = 0; i < n; i++)
             {
-                _swapsCount++;
                 array[i] = output[i];
             }
         }

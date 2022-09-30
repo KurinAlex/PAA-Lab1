@@ -58,7 +58,6 @@
 
             for (int i = 0; i < tempArray.Length; i++)
             {
-                _swapsCount++;
                 array[low + i] = tempArray[i];
             }
         }
