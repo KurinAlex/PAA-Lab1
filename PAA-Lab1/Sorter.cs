@@ -10,18 +10,18 @@ namespace PAA_Lab1
         {
             var stopwatch = Stopwatch.StartNew();
 
-            _swapsCount = 0;
             _comparisonsCount = 0;
+            _copiesCount = 0;
             Sort(array);
 
             stopwatch.Stop();
 
-            return new SortingResult(_swapsCount, _comparisonsCount, stopwatch.Elapsed.TotalMilliseconds);
+            return new SortingResult(_comparisonsCount, _copiesCount, stopwatch.Elapsed.TotalMilliseconds);
         }
 
         public abstract void Sort(int[] array);
 
-        protected long _swapsCount;
         protected long _comparisonsCount;
+        protected long _copiesCount;
     }
 }

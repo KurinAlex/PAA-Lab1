@@ -37,7 +37,7 @@
                         var result = sorter.GetSortingResult(arrayToSort);
 
                         Console.WriteLine($"> Comparisons: {result.Comparisons}");
-                        Console.WriteLine($"> Swaps: {result.Swaps}");
+                        Console.WriteLine($"> Copies: {result.Copies}");
                         Console.WriteLine($"> Time: {result.Time} ms");
                         WriteDivider();
                     }

@@ -31,12 +31,14 @@
 
             for (int i = n - 1; i >= 0; i--)
             {
+                _copiesCount++;
                 output[count[array[i] / exp % _base] - 1] = array[i];
                 count[array[i] / exp % _base]--;
             }
 
             for (int i = 0; i < n; i++)
             {
+                _copiesCount++;
                 array[i] = output[i];
             }
         }

@@ -2,15 +2,15 @@
 {
     public struct SortingResult
     {
-        public SortingResult(long swaps, long comparisons, double time)
+        public SortingResult(long comparisons, long copies, double time)
         {
-            Swaps = swaps;
             Comparisons = comparisons;
+            Copies = copies;
             Time = time;
         }
 
-        public long Swaps;
         public long Comparisons;
+        public long Copies;
         public double Time;
     }
 }

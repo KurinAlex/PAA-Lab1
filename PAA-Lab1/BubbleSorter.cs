@@ -16,7 +16,7 @@
                     _comparisonsCount++;
                     if (array[i - 1] > array[i])
                     {
-                        _swapsCount++;
+                        _copiesCount += 3;
                         (array[i], array[i - 1]) = (array[i - 1], array[i]);
                         changed = true;
                     }

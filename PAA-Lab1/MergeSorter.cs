@@ -30,7 +30,9 @@
             while ((left <= middle) && (right <= high))
             {
                 _comparisonsCount++;
-                if (array[left] < array[right])
+                _copiesCount++;
+
+                if (array[left] <= array[right])
                 {
                     tempArray[index] = array[left];
                     left++;
@@ -46,18 +48,21 @@
 
             for (int i = left; i <= middle; i++)
             {
+                _copiesCount++;
                 tempArray[index] = array[i];
                 index++;
             }
 
             for (int i = right; i <= high; i++)
             {
+                _copiesCount++;
                 tempArray[index] = array[i];
                 index++;
             }
 
             for (int i = 0; i < tempArray.Length; i++)
             {
+                _copiesCount++;
                 array[low + i] = tempArray[i];
             }
         }
